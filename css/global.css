@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-1);
+}
+img {
+  max-width: 100%;
+}
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style: none;
+}

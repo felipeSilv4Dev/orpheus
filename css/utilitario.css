@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span {
+  color: #fff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.up {
+  text-transform: uppercase;
+}
+.cap {
+  text-transform: capitalize;
+}
+.weight-5 {
+  font-weight: 500;
+}
+.weight-7 {
+  font-weight: 700;
+}
+
+.bg-2-texto {
+  background: var(--bg-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root body.dark {
+  --bg-1: #121416;
+  --bg-2: linear-gradient(
+    295.38deg,
+    #ffe5a2 4.89%,
+    #bf841a 50.44%,
+    #ffcd74 95.06%
+  );
+  --bg-3: linear-gradient(
+    90deg,
+    rgba(9, 11, 14, 0.81) 19.79%,
+    rgba(9, 11, 14, 0) 97.4%
+  );
+  --texto-1: #fff;
+  --texto-2: #0a0d11;
+  --texto-3: #eff3fb;
+  --texto-4: rgba(255, 255, 255, 0.8);
+  --texto-5: #cccccc;
+}
+:root body.light {
+  --bg-1: #fff;
+  --bg-2: linear-gradient(
+    295.38deg,
+    #d99a01 4.89%,
+    #9f6605 49.04%,
+    #efb62b 95.06%
+  );
+  --bg-3: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.81) 19.79%,
+    rgba(255, 255, 255, 0) 97.4%
+  );
+  --texto-1: #0d0d0d;
+  --texto-2: #fff;
+  --texto-3: #171717;
+  --texto-4: rgba(13, 13, 13, 0.8);
+  --texto-5: #080a0d;
+}
