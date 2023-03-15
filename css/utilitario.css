@@ -5,16 +5,34 @@ h4,
 a,
 p,
 span {
-  color: #fff;
+  color: var(--texto-1);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+/* container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0rem 5rem;
+}
+/* padding */
+
+/* text transform */
 .up {
   text-transform: uppercase;
 }
 .cap {
   text-transform: capitalize;
+}
+
+/* font weight */
+
+.weight-2 {
+  font-weight: 200;
+}
+.weight-3 {
+  font-weight: 300;
 }
 .weight-5 {
   font-weight: 500;
@@ -22,6 +40,21 @@ span {
 .weight-7 {
   font-weight: 700;
 }
+.weight-8 {
+  font-weight: 800;
+}
+.weight-9 {
+  font-weight: 900;
+}
+
+/* display flex */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* gradiente na letra */
 
 .bg-2-texto {
   background: var(--bg-2);
@@ -30,8 +63,10 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+/* cores tema dark  */
+
 :root body.dark {
-  --bg-1: #121416;
+  --bg-1: #050607;
   --bg-2: linear-gradient(
     295.38deg,
     #ffe5a2 4.89%,
@@ -43,12 +78,17 @@ span {
     rgba(9, 11, 14, 0.81) 19.79%,
     rgba(9, 11, 14, 0) 97.4%
   );
+  --bg-4: linear-gradient(45deg, #121a27, #050607, #050607, #050607, #121a27);
   --texto-1: #fff;
   --texto-2: #0a0d11;
   --texto-3: #eff3fb;
   --texto-4: rgba(255, 255, 255, 0.8);
   --texto-5: #cccccc;
+  --cor-borda: #101822;
 }
+
+/* cores tema light */
+
 :root body.light {
   --bg-1: #fff;
   --bg-2: linear-gradient(
@@ -62,9 +102,11 @@ span {
     rgba(255, 255, 255, 0.81) 19.79%,
     rgba(255, 255, 255, 0) 97.4%
   );
+  --bg-4: linear-gradient(45deg, #e3f1fa, #fff, #fff, #fff, #e3f1fa);
   --texto-1: #0d0d0d;
   --texto-2: #fff;
   --texto-3: #171717;
   --texto-4: rgba(13, 13, 13, 0.8);
   --texto-5: #080a0d;
+  --cor-borda: #fff;
 }
