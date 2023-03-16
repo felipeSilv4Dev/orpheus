@@ -78,7 +78,8 @@ span {
     rgba(9, 11, 14, 0.81) 19.79%,
     rgba(9, 11, 14, 0) 97.4%
   );
-  --bg-4: linear-gradient(45deg, #121a27, #050607, #050607, #050607, #121a27);
+  --bg-4: #0b0d10;
+  --bg-5: linear-gradient(274.7deg, #0d1626 -0.81%, #07090c 98.64%);
   --texto-1: #fff;
   --texto-2: #0a0d11;
   --texto-3: #eff3fb;
@@ -102,7 +103,8 @@ span {
     rgba(255, 255, 255, 0.81) 19.79%,
     rgba(255, 255, 255, 0) 97.4%
   );
-  --bg-4: linear-gradient(45deg, #e3f1fa, #fff, #fff, #fff, #e3f1fa);
+  --bg-4: #e0e0e0;
+  --bg-5: linear-gradient(274.7deg, #dff1f4 -0.81%, #e9eaec 98.64%);
   --texto-1: #0d0d0d;
   --texto-2: #fff;
   --texto-3: #171717;
