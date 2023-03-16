@@ -96,3 +96,45 @@
   border-radius: 5px;
   letter-spacing: 0.045em;
 }
+
+/* detalhes */
+
+.detalhe {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background: var(--bg-5);
+  margin-bottom: 10.3rem;
+  position: relative;
+}
+.detalhe-info {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+}
+
+.detalhe-info h2 {
+  font-size: 2.3rem;
+  letter-spacing: 0.035em;
+}
+.detalhe-info p {
+  line-height: 2.425rem;
+  letter-spacing: 0.535em;
+  font-size: 1.7rem;
+  text-align: center;
+  color: var(--texto-5);
+}
+.detalhe-img {
+  grid-column: 2;
+}
+.detalhe-btn {
+  background: var(--bg-2);
+  color: var(--texto-2);
+  gap: 0.4125rem;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  letter-spacing: 0.045em;
+}
