@@ -87,6 +87,7 @@ span {
   --texto-4: rgba(255, 255, 255, 0.8);
   --texto-5: #cccccc;
   --cor-borda: #101822;
+  --cor-borda-2: #bf841a;
 }
 
 /* cores tema light */
@@ -112,4 +113,5 @@ span {
   --texto-4: rgba(13, 13, 13, 0.8);
   --texto-5: #080a0d;
   --cor-borda: #fff;
+  --cor-borda-2: #9f6605;
 }
