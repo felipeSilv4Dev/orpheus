@@ -88,6 +88,8 @@ span {
   --texto-5: #cccccc;
   --cor-borda: #101822;
   --cor-borda-2: #bf841a;
+  --btn: #191919;
+  --btn2: #fde19c;
 }
 
 /* cores tema light */
@@ -114,4 +116,6 @@ span {
   --texto-5: #080a0d;
   --cor-borda: #ffe5a2;
   --cor-borda-2: #9f6605;
+  --btn: #f0f0f0;
+  --btn2: #9f6605;
 }
