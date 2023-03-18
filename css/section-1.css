@@ -27,6 +27,7 @@ body.light #tema {
   transform: rotate(180deg);
   transition: 0.6s;
 }
+
 .home {
   display: flex;
   gap: 4rem;
@@ -96,7 +97,136 @@ body.light #tema {
 }
 
 .home-img img {
-  flex: 2;
   height: auto;
   width: 100%;
+  flex: 2;
+}
+
+@media (max-width: 1024px) {
+  .menu-list {
+    gap: 1rem;
+  }
+  .home-texto {
+    margin-top: 4rem;
+  }
+  .home-texto h1,
+  .home-texto h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  .home-texto h1 {
+    letter-spacing: 1.5rem;
+  }
+  .home-texto p {
+    margin-top: 1.31rem;
+  }
+  .btn-1,
+  .btn-2 {
+    padding: 0.8rem 1.1rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .home {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .home-texto {
+    margin-top: 2rem;
+  }
+  .home-texto h1,
+  .home-texto h2 {
+    font-size: 3rem;
+    line-height: 2.6rem;
+  }
+  .home-img img {
+    width: 100vh;
+  }
+  .home-btn {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0rem 1.5rem;
+  }
+  .menu-list {
+    margin-bottom: 1rem;
+  }
+  .menu-list a {
+    font-size: 0.9rem;
+  }
+  #tema {
+    max-width: 1.4rem;
+  }
+  .home-texto h1,
+  .home-texto h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    max-width: 414px;
+    padding: 0 1.5rem;
+  }
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu-list li:last-child {
+    order: -1;
+  }
+  .home-texto h1,
+  .home-texto h2 {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .home-texto {
+    align-self: center;
+  }
+  .home-texto h1 {
+    letter-spacing: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .home-texto p {
+    max-width: 30ch;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0;
+  }
+  .home-btn {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .menu-list {
+    gap: 0.5rem;
+  }
+  .menu-list a {
+    font-size: 0.9rem;
+  }
+  .container {
+    max-width: 300px;
+    padding: 0 1rem;
+  }
+  .home-texto h2,
+  .home-texto h1 {
+    font-size: 1.5rem;
+  }
+  .home-texto p {
+    font-size: 0.9rem;
+  }
+  .btn-1,
+  .btn-2 {
+    font-size: 0.7rem;
+  }
 }

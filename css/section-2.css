@@ -20,8 +20,8 @@
 
 .cabecas-img {
   flex-wrap: wrap;
-  margin-top: 2rem;
   gap: 4.9rem;
+  margin-top: 2rem;
 }
 .cabecas-img div {
   flex: 1 1 270px;
@@ -40,6 +40,47 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 1024px) {
+  .cabecas-img {
+    gap: 1.6rem;
+  }
+}
+@media (max-width: 912px) {
+  .cabecas-img img {
+    width: 100vh;
+  }
+}
+@media (max-width: 540px) {
+  .cabecas-img {
+    gap: 0.5rem;
+  }
+  .section-2 {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 414px) {
+  .cabecas-titulo h2 {
+    font-size: 1rem;
+  }
+  .cabecas-titulo p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 280px) {
+  .cabecas-img p {
+    font-size: 0.7rem;
+  }
+  .cabecas-titulo {
+    gap: 0.5rem;
+  }
+  .cabecas-titulo h2 {
+    font-size: 0.78rem;
+    padding-right: 0.5rem;
+  }
+  .cabecas-titulo p {
+    font-size: 0.7rem;
+  }
+}
 /* contribution */
 
 .contribution {
@@ -105,6 +146,98 @@
   box-shadow: inset 0px 0px 8px 3px var(--btn2);
 }
 
+@media (max-width: 1024px) {
+  .contribution-info {
+    top: 2rem;
+    right: 2rem;
+    gap: 0.4rem;
+  }
+  .contribution-info h2 {
+    font-size: 2rem;
+  }
+  .contribution-info p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 820px) {
+  .contribution-info {
+    top: 1rem;
+  }
+  .contribution-info h2 {
+    font-size: 1.5rem;
+  }
+  .contribution-info p {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .contribution-btn {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .contribution {
+    margin-bottom: 4rem;
+  }
+  .contribution-bg {
+    height: 200px;
+  }
+  .contribution-img {
+    height: 100%;
+    width: auto;
+  }
+}
+@media (max-width: 414px) {
+  .contribution {
+    margin-bottom: 3rem;
+  }
+  .contribution-bg {
+    height: initial;
+    grid-template-columns: 1fr;
+  }
+  .contribution-titulo h2 {
+    font-size: 1rem;
+  }
+  .contribution-titulo p {
+    font-size: 0.8rem;
+  }
+  .contribution-info {
+    position: initial;
+    padding: 1rem;
+  }
+  .contribution-img {
+    display: none;
+  }
+  .contribution-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .contribution-info p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .contribution-titulo {
+    gap: 0.5rem;
+  }
+  .contribution-titulo h2 {
+    font-size: 0.7rem;
+    padding-right: 0.5rem;
+  }
+  .contribution-titulo p {
+    font-size: 0.7rem;
+  }
+  .contribution-info h2 {
+    font-size: 1rem;
+  }
+  .contribution-info p {
+    font-size: 0.9rem;
+  }
+}
+
 /* detalhes */
 
 .detalhe {
@@ -152,4 +285,92 @@
 .detalhe-btn:hover {
   transition: 0.6s;
   box-shadow: inset 0px 0px 8px 3px var(--btn2);
+}
+
+@media (max-width: 1024px) {
+  .detalhe {
+    margin-bottom: 5rem;
+  }
+  .detalhe-info {
+    top: 2rem;
+    left: 2rem;
+    gap: 0.4rem;
+  }
+  .detalhe-info h2 {
+    font-size: 2rem;
+  }
+  .detalhe-info p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 912px) {
+  .detalhe-info h2 {
+    font-size: 1.7rem;
+  }
+  .detalhe-info p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 820px) {
+  .detalhe-info {
+    top: 1rem;
+  }
+  .detalhe-info h2 {
+    font-size: 1.5rem;
+  }
+  .detalhe-info p {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .detalhe-btn {
+    padding: 0.61rem 1rem;
+  }
+}
+@media (max-width: 540px) {
+  .detalhe {
+    height: 200px;
+  }
+  .detalhe-img img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .detalhe {
+    height: initial;
+    grid-template-columns: 1fr;
+  }
+  .detalhe-titulo h2 {
+    font-size: 1rem;
+  }
+  .detalhe-titulo p {
+    font-size: 0.8rem;
+  }
+  .detalhe-info {
+    position: initial;
+    padding: 1rem;
+  }
+  .detalhe-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .detalhe-info p {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .detalhe-img img {
+    display: none;
+  }
+}
+@media (max-width: 280px) {
+  .detalhe-info h2 {
+    font-size: 0.9rem;
+  }
+  .detalhe-info p {
+    font-size: 0.8rem;
+  }
 }
