@@ -16,3 +16,13 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-400px, 0, 0);
+  transition: 0.8s;
+}
+.js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
