@@ -28,6 +28,31 @@ export default function ThemeButton() {
       imgContibution.src = "./img/section-2/img-4-dark.png";
     }
 
+    function activeHover() {
+      if (body.classList.contains(darkClass)) {
+        this.src = "./img/section-1/sol-2.svg";
+
+        this.addEventListener("mouseleave", onMouseleave);
+
+        function onMouseleave() {
+          if (body.classList.contains(darkClass)) {
+            this.src = "./img/section-1/sol.svg";
+          }
+        }
+      } else if (body.classList.contains(lightClass)) {
+        this.src = "./img/section-1/lua-2.svg";
+
+        this.addEventListener("mouseleave", onMouseleave);
+
+        function onMouseleave() {
+          if (body.classList.contains(lightClass)) {
+            this.src = "./img/section-1/lua.svg";
+          }
+        }
+      }
+    }
+
+    btnTheme.addEventListener("mouseover", activeHover);
     btnTheme.addEventListener("click", activeTheme);
   }
 }

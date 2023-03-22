@@ -1,3 +1,7 @@
+.degrade {
+  background: var(--bg-6);
+}
+
 .menu {
   padding-top: 1.9rem;
   padding-bottom: 1.3rem;
@@ -151,7 +155,7 @@ body.light #tema {
     padding: 0rem 1.5rem;
   }
   .menu {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
   .menu-list {
     margin-bottom: 1rem;
