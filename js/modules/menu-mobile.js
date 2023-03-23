@@ -7,49 +7,37 @@ export default function menuMobile() {
   const tema = document.getElementById("tema");
 
   const eventos = ["click", "touchstart"];
-  const acttiveclass = "active";
+  const activeclass = "active";
 
-  if (btnMenu) {
-    listA.forEach((a) => {
-      eventos.forEach((eventos) => {
-        btnMenu.addEventListener(eventos, () => {
-          a.classList.add(acttiveclass);
-          return a;
-        });
+  function openMenu(event) {
+    if (event.type === "click") {
+      event.preventDefault();
+    } else {
+      this.classList.toggle(activeclass);
+      menuList.classList.toggle(activeclass);
+      tema.classList.add(activeclass);
+
+      listA.forEach((a) => {
+        a.classList.toggle(activeclass);
+        return a;
       });
-    });
 
-    listLi.forEach((li) => {
-      eventos.forEach((eventos) => {
-        btnMenu.addEventListener(eventos, () => {
-          li.classList.add(acttiveclass);
-          return li;
-        });
+      listLi.forEach((li) => {
+        li.classList.toggle(activeclass);
+        return li;
       });
-    });
-
-    function openMenu({ target }) {
-      if (target == "click") {
-        target.preventDefault();
-      }
-      target.classList.toggle(acttiveclass);
-      menuList.classList.toggle(acttiveclass);
-      tema.classList.add(acttiveclass);
     }
-
-    function bodyClick({ target }) {
-      if (target == "click") {
-        target.preventDefault();
-      }
-      if (!target.classList.contains(acttiveclass)) {
-        menuList.classList.remove(acttiveclass);
-        btnMenu.classList.remove(acttiveclass);
-      }
-    }
-
-    eventos.forEach((eventos) => {
-      btnMenu.addEventListener(eventos, openMenu);
-      body.addEventListener(eventos, bodyClick);
-    });
   }
+
+  function bodyClick({ target }) {
+    if (!target.classList.contains(activeclass)) {
+      menuList.classList.remove(activeclass);
+      btnMenu.classList.remove(activeclass);
+    }
+  }
+
+  eventos.forEach((eventos) => {
+    btnMenu.addEventListener(eventos, openMenu);
+    body.addEventListener(eventos, bodyClick);
+  });
 }
