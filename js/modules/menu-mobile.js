@@ -5,6 +5,7 @@ export default function menuMobile() {
   const listLi = document.querySelectorAll("#menuList li");
   const listA = document.querySelectorAll("#menuList li a");
   const tema = document.getElementById("tema");
+
   const eventos = ["click", "touchstart"];
   const acttiveclass = "active";
 
